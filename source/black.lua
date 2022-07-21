@@ -3387,7 +3387,7 @@ else
 return LuaTele.sendText(msg_chat_id,msg_id,m,"md",true) 
 end
 end
-if text == "الساعه" then
+if text == "الساعة" then
 local time = "\n الساعه الان : "..os.date("%I:%M%p")
 return LuaTele.sendText(msg_chat_id,msg_id,time,"md",true) 
 end
@@ -3395,7 +3395,7 @@ if text == "التاريخ" then
 local date =  "\n التاريخ : "..os.date("%Y/%m/%d")
 return LuaTele.sendText(msg_chat_id,msg_id,date,"md",true) 
 end
-if text == "صورتي" then
+if text == "صوري" then
 if Redis:get(Theblack.."myphoto"..msg_chat_id) == "off" then
 LuaTele.sendText(msg_chat_id,msg_id,'*‹ : الصوره معطله*',"md",true) 
 else
